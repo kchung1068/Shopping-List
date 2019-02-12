@@ -8,13 +8,32 @@
 // 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        return
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 10
+    }
+    
 
+    @IBOutlet var tableView: UITableView!
+    
+    @IBOutlet var newItemTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.dataSource = self
     }
 
-
+    @IBAction func itembarButtonPressed(_ sender: Any) {
+        
+        
+    }
+    
+    
 }
 
