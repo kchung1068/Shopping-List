@@ -10,12 +10,20 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
+    
+    
+    var items: [item] = []
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")! but can crash
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
             
-            cell.textLabel?.text = "Hello"
+            
+            let itemname = items[indexPath.row].name
+            
+            cell.textLabel?.text = itemname
             
             
             if indexPath.row % 2 == 0 {
@@ -39,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 19
+        return items.count
     }
     
 
@@ -47,15 +55,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var newItemTextField: UITextField!
     
-    var items: [Item] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        let itemOne = Item(name: "Milk")
-        let itemTwo = Item(name: "Blueberries")
+        let itemOne = item(name: "Milk")
+        let itemTwo = item(name: "Blueberries")
         items = [itemOne, itemTwo]
+        let itemThree = item(name: "Crackers")
+        items.append(itemThree)
     }
 
     @IBAction func itembarButtonPressed(_ sender: Any) {
