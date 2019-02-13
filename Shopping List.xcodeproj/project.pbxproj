@@ -12,6 +12,7 @@
 		2E7B7F64220E242900E4839E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7B7F62220E242900E4839E /* Main.storyboard */; };
 		2E7B7F66220E242E00E4839E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7B7F65220E242E00E4839E /* Assets.xcassets */; };
 		2E7B7F69220E242E00E4839E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7B7F67220E242E00E4839E /* LaunchScreen.storyboard */; };
+		2ED7632722136CC9001A9FAC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7632622136CC9001A9FAC /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2E7B7F65220E242E00E4839E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E7B7F68220E242E00E4839E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E7B7F6A220E242E00E4839E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ED7632622136CC9001A9FAC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				2E7B7F5E220E242900E4839E /* AppDelegate.swift */,
 				2E7B7F60220E242900E4839E /* ViewController.swift */,
+				2ED7632622136CC9001A9FAC /* Item.swift */,
 				2E7B7F62220E242900E4839E /* Main.storyboard */,
 				2E7B7F65220E242E00E4839E /* Assets.xcassets */,
 				2E7B7F67220E242E00E4839E /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7B7F61220E242900E4839E /* ViewController.swift in Sources */,
+				2ED7632722136CC9001A9FAC /* Item.swift in Sources */,
 				2E7B7F5F220E242900E4839E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
