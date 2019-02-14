@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6E320622160B39005A0615 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E320522160B39005A0615 /* SecondViewController.swift */; };
 		2E7B7F5F220E242900E4839E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7B7F5E220E242900E4839E /* AppDelegate.swift */; };
 		2E7B7F61220E242900E4839E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7B7F60220E242900E4839E /* ViewController.swift */; };
 		2E7B7F64220E242900E4839E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7B7F62220E242900E4839E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E6E320522160B39005A0615 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2E7B7F5B220E242900E4839E /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7B7F5E220E242900E4839E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7B7F60220E242900E4839E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				2E7B7F60220E242900E4839E /* ViewController.swift */,
 				2ED7632622136CC9001A9FAC /* Item.swift */,
 				2E7B7F62220E242900E4839E /* Main.storyboard */,
+				2E6E320522160B39005A0615 /* SecondViewController.swift */,
 				2E7B7F65220E242E00E4839E /* Assets.xcassets */,
 				2E7B7F67220E242E00E4839E /* LaunchScreen.storyboard */,
 				2E7B7F6A220E242E00E4839E /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6E320622160B39005A0615 /* SecondViewController.swift in Sources */,
 				2E7B7F61220E242900E4839E /* ViewController.swift in Sources */,
 				2ED7632722136CC9001A9FAC /* Item.swift in Sources */,
 				2E7B7F5F220E242900E4839E /* AppDelegate.swift in Sources */,

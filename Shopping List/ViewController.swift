@@ -23,15 +23,24 @@ class ViewController: UIViewController, UITableViewDataSource {
             
             let itemname = items[indexPath.row].name
             
+            
             cell.textLabel?.text = itemname
+            
+            let itemQuantity = items[indexPath.row].quantity
+            
+            cell.detailTextLabel?.text = "Quantity:\(itemQuantity)"
+            
             
             
             if indexPath.row % 2 == 0 {
             cell.backgroundColor = UIColor.blue
             cell.textLabel?.textColor = UIColor.orange
+                cell.imageView?.image = UIImage(named: "Unknown")
+                
             } else {
                 cell.backgroundColor = UIColor.yellow
                 cell.textLabel?.textColor = UIColor.purple
+                cell.imageView?.image = UIImage(named: "Yoshi")
                 
             }
             
@@ -60,18 +69,31 @@ class ViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        
+        let Hi = item(name: "Milk", quantity: 2)
         let itemOne = item(name: "Milk")
         let itemTwo = item(name: "Blueberries")
         items = [itemOne, itemTwo]
         let itemThree = item(name: "Crackers")
+        let extraterrestrial = item(name: "麵包")
         items.append(itemThree)
+        items.append(extraterrestrial)
+        items.append(Hi)
+        
     }
 
     @IBAction func itembarButtonPressed(_ sender: Any) {
         
+        if let newItemName = newItemTextField.text, newItemName != ""  {
+            let newItem = item(name: newItemName)
+            items.append(newItem)
+            tableView.reloadData()
+            
+            
+        }
+        
         
     }
+    
     
     
 }
