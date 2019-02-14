@@ -59,6 +59,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         return items.count
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let nvc = segue.destination as! SecondViewController
+            let currentItem = items[indexPath.row]
+            nvc.passedItem = currentItem
+        }
+    }
+    
 
     @IBOutlet var tableView: UITableView!
     
@@ -90,7 +98,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             
             
         }
-        
+         
         
     }
     
